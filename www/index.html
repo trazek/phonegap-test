@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>Check Please</title>
+
+    <link rel="stylesheet" href="lib/onsenui/build/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsenui/build/css/topcoat-mobile-onsen-ios7.min.css">
+</head>
+
+<body>
+    <ons-screen>
+        <ons-navigator title="Home Screen">
+            <ons-page class="center">
+                <h1>Home</h1>
+                <ons-button ng-click="ons.screen.presentPage('new-split/new-main.html')">
+                    Split check from scratch
+                </ons-button>
+                <br>
+                <br>
+                <ons-button ng-click="ons.navigator.pushPage('prev-grp/prev-grp.html')">
+                    Use previously saved group
+                </ons-button>
+                <br>
+                <br>
+                <ons-button ng-click="ons.screen.presentPage('new-split/new-split.html')">
+                    Create a group for later
+                </ons-button>
+            </ons-page>
+        </ons-navigator>
+    </ons-screen>
+
+
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular/angular-touch.js"></script>
+    <script src="lib/angular-route/angular-route.min.js"></script>
+    <script src="lib/onsenui/build/js/onsenui.js"></script>
+
+    <script src='lib/scriptjs/dist/script.min.js'></script>
+    <script src='jsloader.js'></script>
+</body>
+
+</html>
